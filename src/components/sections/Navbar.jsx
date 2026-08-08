@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menu = [
@@ -17,7 +18,7 @@ export default function Navbar() {
         <a
           href={item.href}
           className="relative block text-blue-100 hover:text-blue-400 transition-all duration-300 text md:text-base"
-          //   onClick={scrollToSection(item.href)}
+            // onClick={scrollToSection(item.href)}
         >
           {item.name}
           <span className="absolute bottom-0 left-0 bg-blue-400 w-0 h-0.5  hover:text-blue-400 transition-all duration-300 group-hover:w-full"></span>
@@ -33,6 +34,9 @@ export default function Navbar() {
       section.scrollInView({ behavior: "smooth" });
     }
   };
+
+
+  // My HTML started here
 
   return (
 
