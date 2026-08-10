@@ -1,13 +1,13 @@
-import project1 from "../assets/project1.png";
-import project2 from "../assets/project2.png";
-import project3 from "../assets/project3.png";
-import project4 from "../assets/project4.png";
-import project5 from "../assets/project5.png";
-import project6 from "../assets/project6.png";
-import { CodeBracketIcon, EyeIcon } from "@heroicons/vue/16/solid";
+import project1 from "../assets/images/project1.png";
+import project2 from "../assets/images/project2.png";
+import project3 from "../assets/images/project3.png";
+import project4 from "../assets/images/project4.png";
+import project5 from "../assets/images/project5.png";
+import project6 from "../assets/images/project6.png";
+import { CodeBracketIcon, EyeIcon } from "@heroicons/react/16/solid";
 
 
-export const projects = ref([
+export const projects = [
   {
     id: 1,
     title: "Abojuto Healthcare",
@@ -182,4 +182,4 @@ export const projects = ref([
       },
     ],
   },
-])
+]
