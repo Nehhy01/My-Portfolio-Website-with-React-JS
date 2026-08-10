@@ -2,7 +2,7 @@ import react from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ArrowDownTrayIcon, ArrowRightIcon } from "@heroicons/react/16/solid";
-import heroImg from "../../assets/images/hero1.png"
+import heroImg from "../../assets/images/hero3.png"
 
 export default function Hero() {
 //   react.useEffect(() => 
@@ -24,15 +24,21 @@ export default function Hero() {
 
 // }, []);
 
+function toContact() {
+  const contact = document.querySelector("#contact")
+  contact.scrollIntoView({behavior: 'smooth'})
+}
+
   return (
-    <section className="relative min-h-screen w-full overflow-hidden flex items-center">
+    <section className="relative mt-10 min-h-screen w-full overflow-hidden flex items-center z-10">
       <div className="w-full px-5 sm:px-8 md:px-12 lg:px-8 max-w-5xl lg:max-w-7xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
+
           {/* Hero Texts */}
           <div className="flex flex-col md:mt-0 mt-20 justify-center">
-            <div className="text-white lg:text-left" data-aoss="fade-right">
-              <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl leading-tight">
-                Hi, I'm
+            <div className="text-white text-center lg:text-left" data-aoss="fade-right">
+              <h1 className="font-bold text-4xl lg:text-5xl leading-tight">
+                Hi, I'm {" "}
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-cyan-400">
                   Nehhy
                 </span>
@@ -43,7 +49,7 @@ export default function Hero() {
                 data-aoss="fade-right"
                 data-aoss-delay="100"
               >
-                Frontend Developer & Graphic Artist
+                A Creative Frontend Developer 
               </p>
             </div>
             <p
@@ -51,16 +57,14 @@ export default function Hero() {
               data-aoss="fade-right"
               data-aoss-delay="200"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium officiis ex eligendi incidunt ratione aliquid
-              doloremque porro odit rerum earum!
+             I don't just build web apps, i build solutions and solve the globe's problem, one app at a time.
             </p>
             <div
               className="flex items-center gap-4 pt-8 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0"
               data-aoss="fade-up"
               data-aoss-delay="300"
             >
-              <button className="flex group w-full overflow-hidden hover:from-blue-400 hover:to-sky-600 transition ease-in duration-150 items-center justify-center bg-linear-to-r sm:w-max from-blue-800 relative to-cyan-400 px-8 py-4 md:px-8 rounded-xl cursor-pointer">
+              <button className="flex group w-full overflow-hidden hover:from-blue-400 hover:to-sky-600 transition ease-in duration-150 items-center justify-center bg-linear-to-r sm:w-max from-blue-800 relative to-cyan-400 px-8 py-4 md:px-8 rounded-xl cursor-pointer" onClick={toContact}>
                 <span className="relative flex items-center justify-center text-white font-semibold text-lg">
                   Contact me
                   <ArrowRightIcon className="text-white ml-2 w-5 h-5 group-hover:translate-x-2 transition-all duration-300" />
@@ -103,7 +107,7 @@ export default function Hero() {
           <div className="lg:h-full flex justify-center lg:justify-end">
             <div className="relative w-full max-w-md lg:max-w-lg">
               <div
-                className="relative z-10 bg-linear-to-r  from-blue-600 to-cyan-600 shadow-2xl rounded-[50%_40%_30%_60%/60%_30%_70%_30%] p-4 backdrop-blur-sm border border-blue-400/30 -tanslate-y-6"
+                className="mt-10 lg:mt-0 relative z-10 bg-linear-to-r  from-blue-600 to-cyan-600 shadow-2xl rounded-[50%_40%_30%_60%/60%_30%_70%_30%] p-4 backdrop-blur-sm border border-blue-400/30 -translate-y-6"
                 data-aoss="zoom-in"
                 data-aoss-delay="500"
               >
@@ -111,7 +115,7 @@ export default function Hero() {
                   <img
                     src={heroImg}
                     loading="lazy"
-                    className="object-cover w-150 h-150 -translate-y-8"
+                    className="object-cover w-150 h-150 -translate-y-6"
                     alt=""
                   />
                 </div>

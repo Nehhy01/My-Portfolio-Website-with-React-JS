@@ -1,5 +1,5 @@
 import { useState, createElement } from "react";
-import {  PaintBrushIcon,  ServerStackIcon,  CodeBracketIcon, ChatBubbleLeftRightIcon,ArrowRightIcon} from "@heroicons/react/16/solid";
+import {ChatBubbleLeftRightIcon,ArrowRightIcon} from "@heroicons/react/16/solid";
 import { data } from "../../data/services";
 
 export default function Services() {
@@ -15,7 +15,7 @@ export default function Services() {
       <div className="relative z-10 mb-6">
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-linear-to-r from-blue-500/20 to-cyan-500/20 border border-blue-400/30 group-hover:scale-110 transition-transform duration-300">
         
-        {createElement(service.icon)}
+        {createElement(service.icon, {className:"w-8 h-8 text-blue-400"})}
 
         </div>
       </div>
@@ -52,7 +52,7 @@ export default function Services() {
         </div>
 
         {/* <!-- Services Cards go here --> */}
-        <div className="grid grid-col-1 md:grid-col-2 lg:grid-col-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           { servicesJSX}
         </div>
 

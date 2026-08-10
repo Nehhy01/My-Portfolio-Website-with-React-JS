@@ -8,7 +8,6 @@ export default function Navbar() {
     { name: "About Me", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
-    { name: "Testimonials", href: "#testimonials" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -41,7 +40,7 @@ export default function Navbar() {
   return (
 
     // My Logo is here
-    <header className="flex justify-between item-center p-6 bg-opacity-50 relative z-20">
+    <header className="flex justify-between item-center p-6 bg-opacity-50 relative z-30">
       <div className="text-2xl font-bold bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
         Nehhy <span className="font-black">Portfolio </span>
       </div>

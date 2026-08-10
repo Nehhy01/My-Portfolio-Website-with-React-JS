@@ -2,6 +2,9 @@ import { useState } from "react";
 import Navbar from "./components/sections/Navbar";
 import Hero from "./components/sections/Hero";
 import Services from "./components/sections/Services";
+import About from "./components/sections/About";
+import Experience from "./components/sections/Experience";
+import Projects from "./components/sections/Projects";
 
 function App() {
   return (
@@ -9,6 +12,10 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
+      <About />
+      <Experience />
+      <Projects />
+
     </div>
   );
 }
