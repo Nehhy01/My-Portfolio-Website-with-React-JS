@@ -1,15 +1,17 @@
-import { AtSymbolIcon, HomeIcon, PhoneArrowDownLeftIcon } from "@heroicons/react/16/solid";
+import {EnvelopeIcon, HomeIcon } from "@heroicons/react/16/solid";
+import { PhoneCall } from "lucide-react";
+import { BsFacebook, BsInstagram, BsLinkedin, BsTwitterX, BsWhatsapp } from "react-icons/bs";
 
 export const contactInfo = [
   {
     id: 1,
-    icon: PhoneArrowDownLeftIcon,
+    icon: EnvelopeIcon,
     category: "Email",
     address: "olanehemiah20@gmail.com",
   },
   {
     id: 2,
-    icon: PhoneArrowDownLeftIcon,
+    icon: PhoneCall,
     category: "Phone",
     address: "+234 708 446 6606",
   },
@@ -25,22 +27,22 @@ export const socials = [
   {
     alt: "linkedIn",
     url: "https://www.linkedin.com/in/nehemiah-ola",
-    style: "border-pink-600 border bg-red-900",
-    iconStyle: "text-red-200",
-    src: AtSymbolIcon,
+    style: "",
+    iconStyle: "hover:text-blue-500 w-6 h-6 cursor-pointer",
+    src: BsLinkedin,
   },
   {
     alt: "facebook",
     url: "https://www.linkedin.com/in/nehemiah-ola",
-    style: "border-blue-600 border bg-blue-900",
-    iconStyle: "text-blue-200",
-    src: AtSymbolIcon,
+    style: "",
+    iconStyle: "hover:text-white w-6 h-6  cursor-pointer",
+    src: BsTwitterX,
   },
   {
     alt: "whatsapp",
     url: "https://www.linkedin.com/in/nehemiah-ola",
     style: "border-green-600 border bg-green-900",
-    iconStyle: "text-green-200",
-    src: AtSymbolIcon,
+    iconStyle: "hover:text-green-600 w-6 h-6 cursor-pointer",
+    src: BsWhatsapp,
   },
 ];

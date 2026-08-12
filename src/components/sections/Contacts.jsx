@@ -22,15 +22,15 @@ export default function Contacts() {
   ));
 
   const socialsJSX = socials.map((social) => (
-    <a
+    <div> <link
       key={social.alt}
-      className={`p-4 rounded-2xl ${social.style}`}
-      href={social.src}
-    >
+      className={`p-1 rounded-sm ${social.style}`}
+      href={social.url}
+    />
       {React.createElement(social.src, {
         className: `w-5 h-5 ${social.iconStyle}`,
       })}
-    </a>
+    </div>
   ));
 
   return (
@@ -39,7 +39,7 @@ export default function Contacts() {
         {/* <!-- Heading Here --> */}
         <div className="text-center mb-22" data-aoss="fade-up">
           <h2 className="text-white text-4xl md:text-5xl mb-3 font-bold">
-            Get in
+            Get in {" "}
             <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-600 to-cyan-600">
               Touch
             </span>
@@ -60,8 +60,8 @@ export default function Contacts() {
 
             {/* <!-- Follow me --> */}
             <div className="mt-4">
-              <h3 className="text-2xl text-white font-bold mb-4">Follow Me</h3>
-              <div className="flex gap-3">{socialsJSX}</div>
+              <h3 className="text-2xl text-white font-bold mb-5">Follow Me</h3>
+              <div className="flex gap-3 text-blue-400">{socialsJSX}</div>
             </div>
           </div>
 

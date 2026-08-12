@@ -46,8 +46,7 @@ export default function Services() {
             data-aoss="fade-up"
             data-aoss-delay="100"
           >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero,
-            porro? adipisicing elit. Vero, porro.
+            Here is how you can work with me, rest assured, you get permium experience from seasoned hands on your projects.
           </p>
         </div>
 

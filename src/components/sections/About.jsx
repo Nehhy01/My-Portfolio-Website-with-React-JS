@@ -104,13 +104,9 @@ export default function About() {
               data-aoss="fade-left"
               data-aoss-delay="300"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium, voluptas nemo? Impedit culpa sit temporibus tenetur
-              sunt perspiciatis modi dicta! Odio quis consequatur, ratione
-              labore iusto cum deserunt a similique adipisci doloribus
-              voluptates vel itaque alias sunt repellendus at neque dolor
-              inventore quaerat et sapiente optio id perspiciatis assumenda?
-              Laborum.
+              Motivated Web developer with growing experience in building responsive
+websites and web apps using modern JavaScript tools. I enjoy learning,
+experimenting, and improving code quality
             </p>
             {/* my Tech Stacks */}
             <div
