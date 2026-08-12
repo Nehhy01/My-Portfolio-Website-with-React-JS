@@ -15,7 +15,23 @@ const socialsJSX = socials.map((social) => (
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gray-950/90 overflow-hidden py-20">
+    <footer className="relative bg-gray-950/90 mt-10 pt-5 pb-20">
+      <div
+        className="absolute -top-28 left-0 w-full overflow-hidden pointer-events-none text-gray-950/90"
+        style={{ height: "120px" }}
+      >
+        <svg
+          className="relative block w-full h-full"
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,96 C360,24 720,192 1440,56 L1440,120 L0,120 Z"
+            fill="oklch(13% 0.028 261.692)"
+          />
+        </svg>
+      </div>
       <div className=" z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div>
           {/* <!-- Logo and Texts --> */}
@@ -41,7 +57,7 @@ export default function Footer() {
           <div></div>
 
           {/* <!-- right reserved --> */}
-          <div className=" px-6 py-3 mb-3 inset-x-0  border-t border-blue-950/70 text-blue-400/50 text-xs absolute bottom-0  ">
+          <div className=" px-6 py-3 mb-3 inset-x-0  border-t-2 border-blue-950/70 text-blue-400/50 text-xs absolute bottom-0  ">
             @2026 Nehhy. All rights reserved
           </div>
         </div>

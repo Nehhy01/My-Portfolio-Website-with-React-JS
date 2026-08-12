@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ArrowDownTrayIcon, ArrowRightIcon } from "@heroicons/react/16/solid";
 import heroImg from "../../assets/images/hero3.png"
+import CV from '../../data/ola_nehemiah_CV.pdf'
 
 export default function Hero() {
 //   react.useEffect(() => 
@@ -72,14 +73,14 @@ function toContact() {
                 </span>
               </button>
 
-              <button className="border-2 border-blue-400 px-8 py-4 md:px-8 rounded-xl relative flex w-full sm:w-max items-center justify-center group text-sky-400 cursor-pointer">
+              <a className="border-2 border-blue-400 px-8 py-4 md:px-8 rounded-xl relative flex w-full sm:w-max items-center justify-center group text-sky-400 cursor-pointer"  href={CV}>
                 <div className="flex items-center justify-center relative">
-                  <ArrowDownTrayIcon className="w-5 h-5 group-hover:translate-y-1 transition-all" />
+                  <ArrowDownTrayIcon className="w-5 h-5 group-hover:translate-y-1 transition-all duration-200" />
                   <span className="pl-3 font-semibold text-lg">
                     Download CV
                   </span>
                 </div>
-              </button>
+              </a>
             </div>
 
             <div
