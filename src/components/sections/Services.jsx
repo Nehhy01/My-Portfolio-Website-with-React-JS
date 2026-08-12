@@ -36,7 +36,7 @@ export default function Services() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center m-16" data-aosss="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            My -
+            My {" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-400">
             Services
             </span>
