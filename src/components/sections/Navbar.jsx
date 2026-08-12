@@ -39,7 +39,7 @@ export default function Navbar() {
   return (
 
     // My Logo is here
-    <header className="flex justify-between max-w-7xl mx-auto item-center p-6 bg-opacity-50 relative z-30">
+    <header className="flex justify-between max-w-7xl mx-auto item-center p-6 bg-opacity-50 relative z-30" id="header">
       <div className="text-2xl font-bold bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
         Nehhy <span className="font-black">Portfolio </span>
       </div>

@@ -11,6 +11,7 @@ const socialsJSX = socials.map((social) => (
       className: `w-5 h-5 transition-all duration-200 ${social.iconStyle}`,
     })}
   </div>
+
 ));
 
 export default function Footer() {
