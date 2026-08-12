@@ -31,7 +31,7 @@ function toContact() {
               <p
                 className="text-blue-200 font-medium text-lg md:text-xl mt-3"
                 data-aos="fade-right"
-                data-aoss-delay="100"
+                data-aos-delay="100"
               >
                 A Creative Frontend Developer 
               </p>
@@ -39,14 +39,14 @@ function toContact() {
             <p
               className="text-gray-300 pt-6 text-center lg:text-left mx-auto max-w-xl"
               data-aos="fade-right"
-              data-aoss-delay="200"
+              data-aos-delay="200"
             >
              I don't just build web apps, i build solutions and solve the globe's problem, one app at a time.
             </p>
             <div
               className="flex items-center gap-4 pt-8 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0"
               data-aos="fade-up"
-              data-aoss-delay="300"
+              data-aos-delay="300"
             >
               <button className="flex group w-full overflow-hidden hover:from-blue-400 hover:to-sky-600 transition ease-in duration-150 items-center justify-center bg-linear-to-r sm:w-max from-blue-800 relative to-cyan-400 px-8 py-4 md:px-8 rounded-xl cursor-pointer" onClick={toContact}>
                 <span className="relative flex items-center justify-center text-white font-semibold text-lg">
@@ -69,7 +69,7 @@ function toContact() {
             <div
               className="flex mt-15 items-center gap-6 justify-center lg:justify-start"
               data-aos="fade-up"
-              data-aoss-delay="400"
+              data-aos-delay="400"
             >
               <div>
                 <p className="text-blue-400 text-3xl font-bold">50+</p>
@@ -93,7 +93,7 @@ function toContact() {
               <div
                 className="mt-10 lg:mt-0 relative z-10 bg-linear-to-r  from-blue-600 to-cyan-600 shadow-2xl rounded-[50%_40%_30%_60%/60%_30%_70%_30%] p-4 backdrop-blur-sm border border-blue-400/30 -translate-y-6"
                 data-aos="zoom-in"
-                data-aoss-delay="500"
+                data-aos-delay="500"
               >
                 <div className="overflow-hidden rounded-xl">
                   <img

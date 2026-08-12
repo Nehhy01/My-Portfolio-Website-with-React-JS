@@ -10,8 +10,8 @@ export default function Projects() {
     <div
       key={project.id}
       className={`group relative bg-linear-to-br from-gray-800/50 to-blue-900/30 rounded-3xl overflow-hidden border background-blur-sm hover:boder-blue-400/40 transition-all duration-500 hover:transform hover:-translate-y-2 ${project.borderColor}`}
-      data-aoss="fade-up"
-      data-aoss-delay={(index + 1) * 100}
+      data-aos="fade-up"
+      data-aos-delay={(index + 1) * 100}
     >
       {/* <!-- Project Image --> */}
       <div className="relative overflow-hidden">
@@ -74,7 +74,7 @@ export default function Projects() {
     <section className="relative py-20 overflow-hidden" id="projects">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* <!-- Section-Header --> */}
-        <div className="text-center mb-16" data-aoss="fade-up">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             My{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-cyan-600">
@@ -93,7 +93,7 @@ export default function Projects() {
         {/* <!-----END OF A SINGLE PROJECT GRID----- --> */}
 
         {/* <!-- CTA Section --> */}
-        <div className="text-center mt-16" data-aoss="fade-up">
+        <div className="text-center mt-16" data-aos="fade-up">
           <div className="flex flex-col w-full sm:flex-row gap-4 items-center justify-center">
             <button className=" cursor-pointer px-8 py-4 rounded-xl bg-linear-to-r group from-blue-500 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 flex items-center">
               View All Projects{" "}

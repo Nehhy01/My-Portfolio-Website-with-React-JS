@@ -7,8 +7,8 @@ export default function Contacts() {
   const contactInfoJSX = contactInfo.map((contact, index) => (
     <div
       key={contact.id}
-      data-aoss="fade-right"
-      data-aoss-delay={index * 100}
+      data-aos="fade-right"
+      data-aos-delay={index * 100}
       className="flex items-center gap-4"
     >
       {React.createElement(contact.icon, {
@@ -37,7 +37,7 @@ export default function Contacts() {
     <section className="overflow-hidden relative py-20" id="contact">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* <!-- Heading Here --> */}
-        <div className="text-center mb-22" data-aoss="fade-up">
+        <div className="text-center mb-22" data-aos="fade-up">
           <h2 className="text-white text-4xl md:text-5xl mb-3 font-bold">
             Get in {" "}
             <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-600 to-cyan-600">
@@ -52,7 +52,7 @@ export default function Contacts() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
           {/* <!-- contact infos --> */}
-          <div className="flex ml-10 gap-8 flex-col" data-aoss="fade-right">
+          <div className="flex ml-10 gap-8 flex-col" data-aos="fade-right">
             <h3 className="text-2xl text-white font-bold">
               Contact Information
             </h3>
@@ -71,7 +71,7 @@ export default function Contacts() {
             <form
               className="flex flex-col gap-6 mt-10 lg:mt-0"
               action={sendAsMail}
-              data-aoss="fade-left"
+              data-aos="fade-left"
             >
               {/* <!-- form Column --> */}
 

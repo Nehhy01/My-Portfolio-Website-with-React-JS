@@ -5,8 +5,8 @@ export default function About() {
     <div
       key={image.id}
       className="relative group"
-      data-aoss={image.animation}
-      data-aoss-delay={image.delay}
+      data-aos={image.animation}
+      data-aos-delay={image.delay}
     >
       <div
         className={`rounded-2xl p-2 border shadow-lg ${image.gradient}`}
@@ -64,15 +64,15 @@ export default function About() {
           <div className="lg:h-full flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="relative w-full max-w-md">
               <div
-                data-aoss="zoom-in"
+                data-aos="zoom-in"
                 className="relative bg-linear-to-br from-gray-800/60 to-blue-900/40 rounded-3xl p-6 background-blur-sm border broder-blue-500/30 shadow-2xl"
               >
                 <div className="grid grid-cols-2 gap-4">{aboutImageJSX}</div>
 
                 <div
                   className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-linear-to-r from-blue-500 to-cyan-500 rounded-2xl px-6 py-3 border border-blue-400/40 shadow-xl"
-                  data-aoss="fade-up"
-                  data-aoss-delay="600"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
                 >
                   <p className="text-white text-center text-xl font-semibold capitalize">
                     3+ years of experience
@@ -85,7 +85,7 @@ export default function About() {
           {/* // GRID CHILD 2 */}
           <div
             className="text-center flex flex-col justify-center order-1 lg:order-2 lg:text-left"
-            data-aoss="fade-left"
+            data-aos="fade-left"
           >
             <h2 className="text-white font-bold text-4xl md:text-5xl lg:text-6xl leading-tight">
               About {" "}
@@ -95,15 +95,15 @@ export default function About() {
             </h2>
             <p
               className="text-blue-200 font-medium text-lg md:text-xl mt-4"
-              data-aoss="fade-left"
-              data-aoss-delay="200"
+              data-aos="fade-left"
+              data-aos-delay="200"
             >
               A Creative Frontend Developer 
             </p>
             <p
               className="text-gray-300 pt-4 text-center lg:text-left leading-relaxed"
-              data-aoss="fade-left"
-              data-aoss-delay="300"
+              data-aos="fade-left"
+              data-aos-delay="300"
             >
               Motivated Web developer with growing experience in building responsive
 websites and web apps using modern JavaScript tools. I enjoy learning,
@@ -112,16 +112,16 @@ experimenting, and improving code quality
             {/* my Tech Stacks */}
             <div
               className="grid grid-cols-1 justify-between sm:grid-cols-2 gap-8 pt-8"
-              data-aoss="fade-up"
-              data-aoss-delay="300"
+              data-aos="fade-up"
+              data-aos-delay="300"
             >
               {skillsJSX}
             </div>
             {/* CTA buttons */}
             <div
               className="flex gap-4 pt-10 flex-col mx-auto lg:mx-0 sm:flex-row"
-              data-aoss="fade-up"
-              data-aoss-delay="400"
+              data-aos="fade-up"
+              data-aos-delay="400"
             >
               {ctaButtonsJSX}
             </div>

@@ -11,8 +11,8 @@ export default function Experience() {
   const techJSX = techStack.map((tech, index) => (
     <span
       key={tech}
-      data-aoss="fade-left"
-      data-aoss-delay={100 * index}
+      data-aos="fade-left"
+      data-aos-delay={100 * index}
       className="px-4 py-2 bg-linear-to-r from-blue-500/40 rounded-full text-white border text-sm border-blue-400/30 font-medium hover:scale-105 transition-all duration-300"
     >
       {tech}
@@ -41,10 +41,12 @@ export default function Experience() {
     </div>
   ));
 
-  const experienceJSX = experience.map((exp) => (
+  const experienceJSX = experience.map((exp, index) => (
     <div
       key={exp.id}
       className={`relative pl-6 border-l-2 group ${exp.borderColor}`}
+      data-aos="fade-left"
+      data-aos-delay={100 * index}
     >
       <div
         className={`absolute top-0 -left-2 w-4 h-4 rounded-full group-hover:scale-150 transition-all duration-300 ${exp.dotColor}`}
@@ -65,7 +67,7 @@ export default function Experience() {
   return (
     <section className="relative overflow-hidden py-20" id="skills">
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16" data-aoss="fade-up">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-transparent bg-clip-text bg-linear-to-tr from-blue-500 to-cyan-500 text-4xl md:text-5xl lg:text-6xl font-bold">
             Skills <span className="text-white"> & Experience</span>
           </h2>
@@ -76,7 +78,7 @@ export default function Experience() {
 
         <div
           className="grid lg:grid-cols-2 items-center gap-12 lg:gap-16"
-          data-aoss="fade-right"
+          data-aos="fade-right"
         >
           <div className="h-full lg:justify-between lg:py-15 lg:flex lg:flex-col">
             {/*  Technical Skills */}
@@ -92,10 +94,10 @@ export default function Experience() {
             </div>
 
             {/*  Tech Stacks   */}
-            <div className="mt-12" data-aoss="fade-left">
+            <div className="mt-12" data-aos="fade-left">
               <h4
                 className="text-2xl font-bold text-white mb-6 flex items-center gap-2"
-                data-aoss-delay="100"
+                data-aos-delay="100"
               >
                 <Squares2X2Icon className="w-6 h-6 text-cyan-400" />
                 Tech Stack
@@ -106,7 +108,7 @@ export default function Experience() {
 
           {/* <!-- Work Experience --> */}
 
-          <div data-aoss="fade-left" className="mt-12 lg:mt-0">
+          <div data-aos="fade-left" className="mt-12 lg:mt-0">
             <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
               <BriefcaseIcon className="w-6 h-6 text-cyan-400" /> Work
               Experience

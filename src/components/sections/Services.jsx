@@ -7,8 +7,8 @@ export default function Services() {
 
   const servicesJSX = services.map((service, index) =>  <div
       key={service.id}
-        data-aoss="'fade-in'"
-        data-aoss-delay="index * 100 + 100"
+        data-aos="fade-in"
+        data-aos-delay={index * 100 + 100}
       className="group relativep-8 rounded-2xl bg-linear-to-br from-gray-800/50 to-blue-900/30 backdrop-blur-sm border border-blue-500/20 hover:border-blue-400/40 transition-all p-6 duration-500 hover:transform hover:-translate-y-2"
     >
       <div className="absolute inset-0 bg-linear-to-r from-blue-500/5 to-cyan-500/5 rounded-2xl opacity-0 duration-0 transition-opacity group-hover:opacity-100"></div>
@@ -34,7 +34,7 @@ export default function Services() {
   return (
     <section className="relative py-20 overflow-hidden" id="services">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center m-16" data-aosss="fade-up">
+        <div className="text-center m-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             My {" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-400">
@@ -43,8 +43,8 @@ export default function Services() {
           </h2>
           <p
             className="text-blue-200 text-lg max-w-2xl mx-auto"
-            data-aoss="fade-up"
-            data-aoss-delay="100"
+            data-aos="fade-up"
+            data-aos-delay="100"
           >
             Here is how you can work with me, rest assured, you get permium experience from seasoned hands on your projects.
           </p>
@@ -57,8 +57,8 @@ export default function Services() {
 
         <div
           className="text-center mt-16"
-          data-aoss="fade-up"
-          data-aoss-dalay="800"
+          data-aos="fade-up"
+          data-aos-dalay="800"
         >
           <div className="inline-flex flex-col sm:flex-row gap-4 items-center">
             <button className="px-8 py-4 group rounded-xl border-2 cursor-pointer border-blue-400 text-blue-400 font-semibold hover:bg-blue-400/10 transition-all duration-300 flex items-center" onClick={() => document.querySelector("#contact").scrollIntoView({ behavior: "smooth" })}>
