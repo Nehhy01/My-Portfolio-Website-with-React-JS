@@ -8,7 +8,7 @@ const socialsJSX = socials.map((social) => (
     href={social.url}
   />
     {React.createElement(social.src, {
-      className: `w-5 h-5 ${social.iconStyle}`,
+      className: `w-5 h-5 transition-all duration-200 ${social.iconStyle}`,
     })}
   </div>
 ));

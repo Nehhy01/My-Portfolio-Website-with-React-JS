@@ -61,7 +61,7 @@ export default function Services() {
           data-aoss-dalay="800"
         >
           <div className="inline-flex flex-col sm:flex-row gap-4 items-center">
-            <button className="px-8 py-4 group rounded-xl border-2 cursor-pointer border-blue-400 text-blue-400 font-semibold hover:bg-blue-400/10 transition-all duration-300 flex items-center">
+            <button className="px-8 py-4 group rounded-xl border-2 cursor-pointer border-blue-400 text-blue-400 font-semibold hover:bg-blue-400/10 transition-all duration-300 flex items-center" onClick={() => document.querySelector("#contact").scrollIntoView({ behavior: "smooth" })}>
               Get in touch{" "}
               <ChatBubbleLeftRightIcon className="group-hover:translate-x-1 transition-all duration-150  w-5 h-5 ml-2" />{" "}
             </button>

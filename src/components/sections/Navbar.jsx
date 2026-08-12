@@ -8,7 +8,6 @@ export default function Navbar() {
     { name: "About Me", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
   ];
 
   const menuJSX = menu.map((item) => {
@@ -27,10 +26,10 @@ export default function Navbar() {
   });
 
   const scrollToSection = (href) => {
-    isMenuOpen.value = false;
+    setIsMenuOpen(false);
     const section = document.querySelector(href);
     if (section) {
-      section.scrollInView({ behavior: "smooth" });
+      section.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -75,7 +74,7 @@ export default function Navbar() {
           {menuJSX}
         </ul>
         <div className="mt-8 md:mt-0 md:ml-8">
-          <button className="cursor-pointer text-sky-100 font-medium px-6 py-2 bg-linear-to-r from-blue-600 to-cyan-400 rounded-full">
+          <button className="cursor-pointer text-sky-100 font-medium px-6 py-2 bg-linear-to-r from-blue-600 to-cyan-400 rounded-full" onClick={() => scrollToSection("#contact")}>
             Let's Talk
           </button>
         </div>

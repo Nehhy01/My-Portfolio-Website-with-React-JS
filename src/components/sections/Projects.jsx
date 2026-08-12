@@ -100,7 +100,10 @@ export default function Projects() {
               <ArrowRightIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-all duration-300" />{" "}
             </button>
 
-            <button className="relative overflow-hidden cursor-pointer px-8 py-4 rounded-xl border border-blue-400 text-blue-200 font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 flex items-center">
+            <button
+            className="relative overflow-hidden cursor-pointer px-8 py-4 rounded-xl border border-blue-400 text-blue-200 font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 flex items-center"
+            onClick={() => document.querySelector("#contact").scrollIntoView({ behavior: "smooth" })}
+            >
               <ChatBubbleLeftRightIcon className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-all duration-300" />{" "}
               Discuss Projects{" "}
             </button>

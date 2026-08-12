@@ -42,6 +42,7 @@ export default function About() {
     <button
       key={button.id}
       className={`px-8 py-3 rounded-xl font-semibold transition-all group duration-300 gap-2 cursor-pointer flex items-center justify-center ${button.classes}`}
+      onClick={() => document.querySelector("#contact").scrollIntoView({ behavior: "smooth" })}
     >
       {React.createElement(button.icon, {
         className: `w-6 h-6 ${button.iconClass}`,
